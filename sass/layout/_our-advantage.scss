@@ -3,6 +3,8 @@
   padding-top: 94px;
 }
 .advantage-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   h3 {

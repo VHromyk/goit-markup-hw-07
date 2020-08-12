@@ -16,7 +16,13 @@
   color: $text-button;
   background-color: $accent-text-color;
 
+  -webkit-transition-duration: 250ms;
+
+  -o-transition-duration: 250ms;
+
   transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -28,6 +34,7 @@
 
   &:hover {
     background: #188ce8;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }

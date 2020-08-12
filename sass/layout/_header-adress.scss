@@ -1,5 +1,7 @@
 /*Оформление адреса*/
 .head-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
 
@@ -21,7 +23,13 @@
   cursor: pointer;
   outline: none;
 
+  -webkit-transition-duration: 250ms;
+
+  -o-transition-duration: 250ms;
+
   transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:not(:last-child) {
